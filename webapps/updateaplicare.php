@@ -14,8 +14,8 @@
             $host="http://dvlp.bpjs-kesehatan.go.id:8888";
             $url = $host."/aplicaresws/rest/bed/update/".getOne("select kode_ppk from setting");				
             $session = curl_init ( $url );			
-            $cid = "4317";
-            $ckey = "1vF1F4295D";				
+            $cid = "1000";
+            $ckey = "1112";			
             date_default_timezone_set("Asia/Jakarta");
             $timestamp = strtotime(date("Y/m/d H:i:s"));
             $data = $cid."&".$timestamp;

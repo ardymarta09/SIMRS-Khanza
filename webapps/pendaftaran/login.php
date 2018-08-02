@@ -101,7 +101,7 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['password'])) { redirect('inde
                 if(num_rows($found) == 1) {
                     $user = fetch_assoc($found);
         		    if($user['password'] !== $_POST['password']) {
-                        $errors[] = 'No. KTP/NRP/NIP Tidak Valid, Silahkan Mendaftar Manual Di Loket Pendaftaran.';
+                        $errors[] = 'NIK tidak valid.';
                     }
                 }
 

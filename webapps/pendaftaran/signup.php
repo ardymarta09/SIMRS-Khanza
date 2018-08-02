@@ -101,10 +101,10 @@ if(PRODUCTION == 'YES') {
 if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if(empty($_POST['no_ktp'])) {
-	$errors[] = 'Kolom No KTP/NRP/NIP tidak boleh kosong';
+	$errors[] = 'Kolom No KTP tidak boleh kosong';
     }
     if(nik_exits($_POST['no_ktp'])) {
-	$errors[] = 'No KTP/NRP/NIP telah terdaftar';
+	$errors[] = 'No KTP telah terdaftar';
     }
     if(empty($_POST['nm_pasien'])) {
 	$errors[] = 'Kolom nama tidak boleh kosong';
@@ -125,7 +125,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         '-',
         '{$_POST['alamat']}',
         '-',
-        '{$_POST['pekerjaan']}',
+        '-',
         '-',
         '-',
         '$date',
