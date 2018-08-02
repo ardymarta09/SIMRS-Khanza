@@ -15,13 +15,13 @@ if (preg_match ('/config.php/', basename($_SERVER['PHP_SELF']))) die ('Unable to
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'anak bangsa09');
 define('DB_NAME', 'sik');
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
 define('VERSION', '1.8 Beta');
-define('URL', '');
+define('URL', 'http://192.168.1.92/webapps/pendaftaran');
 define('DIR', '');
 define('HARIDAFTAR', '03'); // Batasi hari pendaftaran 3 hari kedepan
 define('LIMITJAM', '08:00:00'); // Batasi jam pendaftaran

@@ -13,9 +13,9 @@
             $tersediapriawanita=0;
             
             # seting koneksi webservices #
-            $xrsid = "kode_rumah_sakit";  # ID Rumah Sakit #
-            $xpass = md5("password_rumah_sakit"); # Password #
-            $strURLSiranap = "http://sirs.yankes.kemkes.go.id/sirsservice/ranap";  
+            $xrsid = "7372031";  # ID Rumah Sakit #
+            $xpass = md5("Tk.iv140702"); # Password #
+            $strURLSiranap = "http://sirs.yankes.kemkes.go.id/sirsservice/ranap";   
             date_default_timezone_set("Asia/Jakarta");
             $timestamp = strtotime(date("d-m-Y"));
             
